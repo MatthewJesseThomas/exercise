@@ -106,21 +106,21 @@ header, .menu-list {
 }
 /* Anchor tags */
 
-a:link {
+li a:link {
     background-color: slateblue;
     box-shadow: 0 0 6px 1px black;
     border-radius: 5px;
 }
-a:visited {
+li a:visited {
     color: var(--alternativeColor);
     border-radius: 5px;
 }
-a:hover {
+li a:hover {
     font-size: 18px;
     color: var(--secondaryColor);
     background-color:slategrey;
 }
-a:active {
+li a:active {
     color: var(--primaryColor);
     background-color: var(--activeLink);
 }

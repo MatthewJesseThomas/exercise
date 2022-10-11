@@ -14,8 +14,7 @@ header, .menu-list {
     display: inline-flex;
     width: 100%;
     justify-content: space-between;
-    background-color: darkolivegreen;
-
+    border-radius: 30px;
 }
 /* menu-list */
 .menu-list {
@@ -36,7 +35,6 @@ header, .menu-list {
   }
   .menu-list li a:hover {
     color: black;
-    background-color:plum;
   }
 table {
     border: 3px solid black;
@@ -57,9 +55,6 @@ th, td {
 footer p {
     font-weight: bolder;
 }
-h2 {
-    color: brown;
-}
 main img {
     width: 9em;
 }
@@ -70,5 +65,85 @@ main img {
 .truly-special {
     display: inline-flex;
 
+}
+cursor {
+    pointer-events: painted;
+}
+/* Create custom variables. */
+:root {
+    --primaryColor: black;
+    --secondaryColor: white;
+    --alternativeColor: rgba(5, 125, 19, 0.7);
+    --gray: rgba(205, 198, 198, 0.5);
+    --mainBoxShadow: .5vw .5vw .5vw var(--alternativeColor);
+    --landingPage : .5vw 1vw .5vw var(--gray);
+    --activeLink: #00b061;
+}
+
+/* header, main, footer */
+header, main, footer {
+    min-width: 100%;
+}
+header, footer {
+    background-color: darkgray;
+}
+/* Display: inline-flex */
+header, .menu-list {
+    display: inline-flex;
+}
+/* menu */
+.menu {
+    margin-left: auto;
+    align-self: center;
+}
+/* menu-list */
+.menu-list {
+    list-style: none;
+}
+.menu-list li {
+    padding: 0 5px;
+}
+/* Anchor tags */
+a:link {
+    background-color: var(--gray);
+    color: var(--primaryColor);
+}
+a:visited {
+    color: var(--alternativeColor);
+    border-radius: 5px;
+}
+a:hover {
+    font-size: 18px;
+    color: var(--secondaryColor);
+    background-color:plum;
+}
+a:active {
+    color: var(--primaryColor);
+    background-color: var(--activeLink);
+}
+/* Pseudo-class selector */
+h2::first-letter {
+    background-color: darkcyan;
+    color: white;
+    padding: 0 5px;
+    font-size: 20px;
+}
+/* footer */
+footer{
+    height: 99px;
+}
+footer p {
+    font-weight: bold;
+}
+#box1 {
+    background-color: black;
+    border-radius: 30px;
+    text-align: center;
+    width: 300px;
+}
+#box1p {
+    /* Font-Color =>Text*/
+    color: green;
+    font-weight: bolder;
 }
 

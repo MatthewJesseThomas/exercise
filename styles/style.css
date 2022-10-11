@@ -8,9 +8,13 @@
 
 /* Display: Inline-Flex */
 header, .menu-list {
+    position: sticky;
+    top: 0;
+    z-index: 100;
     display: inline-flex;
     width: 100%;
     justify-content: space-between;
+    background-color: darkolivegreen;
 
 }
 /* menu-list */

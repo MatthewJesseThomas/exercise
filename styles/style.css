@@ -15,6 +15,7 @@ header, .menu-list {
     width: 100%;
     justify-content: space-between;
     border-radius: 30px;
+    border: 5px solid black;
 }
 /* menu-list */
 .menu-list {
@@ -30,7 +31,7 @@ header, .menu-list {
 }
 .menu-list li a {
     color:black;
-    padding: 5px;
+    padding: 1.5px;
     text-decoration: none;
   }
   .menu-list li a:hover {
@@ -85,7 +86,7 @@ header, main, footer {
     min-width: 100%;
 }
 header, footer {
-    background-color: darkgray;
+    background-color: darkslateblue;
 }
 /* Display: inline-flex */
 header, .menu-list {
@@ -104,9 +105,11 @@ header, .menu-list {
     padding: 0 5px;
 }
 /* Anchor tags */
+
 a:link {
-    background-color: var(--gray);
-    color: var(--primaryColor);
+    background-color: slateblue;
+    box-shadow: 0 0 6px 1px black;
+    border-radius: 5px;
 }
 a:visited {
     color: var(--alternativeColor);
@@ -115,22 +118,24 @@ a:visited {
 a:hover {
     font-size: 18px;
     color: var(--secondaryColor);
-    background-color:plum;
+    background-color:slategrey;
 }
 a:active {
     color: var(--primaryColor);
     background-color: var(--activeLink);
 }
 /* Pseudo-class selector */
-h2::first-letter {
+h2::first-line {
     background-color: darkcyan;
     color: white;
     padding: 0 5px;
     font-size: 20px;
 }
+
 /* footer */
 footer{
     height: 99px;
+    border: 5px solid black;
 }
 footer p {
     font-weight: bold;
@@ -140,9 +145,15 @@ footer p {
     border-radius: 30px;
     text-align: center;
     width: 300px;
+    margin-left: 600px;
 }
 #box1p {
     /* Font-Color =>Text*/
     color: green;
     font-weight: bolder;
+}
+.logo {
+    border-radius: 20px;
+    border: 5px solid black;
+    width: 10.5em;
 }

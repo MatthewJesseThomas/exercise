@@ -34,7 +34,7 @@ header, .menu-list {
     padding: 1.5px;
     text-decoration: none;
   }
-  .menu-list li a:hover {
+.menu-list li a:hover {
     color: black;
   }
 table {
@@ -136,6 +136,7 @@ h2::first-line {
 footer{
     height: 99px;
     border: 5px solid black;
+    border-radius: 12px;
 }
 footer p {
     font-weight: bold;
@@ -156,4 +157,16 @@ footer p {
     border-radius: 20px;
     border: 5px solid black;
     width: 10.5em;
+}
+#contact {
+    text-align: center;
+}
+#subject {
+    text-align: center;
+}
+#button {
+    text-align: center;
+}
+#footarge {
+    min-height: 15vh;
 }

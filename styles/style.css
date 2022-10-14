@@ -172,3 +172,10 @@ footer p {
 #footarge {
     min-height: 15vh;
 }
+
+/* adding responsiveness using media queries */
+@media screen and (max-width: 300px) {
+    header {
+        width: 100vw;
+    }
+}

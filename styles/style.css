@@ -174,8 +174,8 @@ footer p {
 }
 
 /* adding responsiveness using media queries */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 600px) {
     header {
         width: 100vw;
     }
-}
+  }

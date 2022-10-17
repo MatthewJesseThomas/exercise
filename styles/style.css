@@ -46,8 +46,6 @@ table {
 body {
     background-image: url('https://i.postimg.cc/wMyj1kqp/AGW.webp');
     background-size: cover;
-    width: 100vw;
-    height: 100vh;
 }
 header img {
     width: 9em;
@@ -176,7 +174,7 @@ footer p {
 }
 
 /* adding responsiveness using media queries */
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
     header {
         width: 100vw;
         background-color: green;

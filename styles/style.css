@@ -1,6 +1,8 @@
 /* Font Style */
 /* @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); */
-*{
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,175 +10,25 @@
     text-shadow: 1px 1px 2px #fff;
 }
 
-/* Display: Inline-Flex */
-header, .menu-list {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    display: inline-flex;
-    width: 100%;
-    justify-content: space-between;
-    border-radius: 30px;
-    border: 5px solid black;
-}
-/* menu-list */
-.menu-list {
-    list-style: none;
-}
-.menu-list li {
-    margin: 0 10px;
-    padding: 0;
-}
-.menu-list {
-    margin-left: auto;
-    align-self: center;
-}
-.menu-list li a {
-    color:black;
-    padding: 1.5px;
-    text-decoration: none;
-  }
-.menu-list li a:hover {
-    color: black;
-  }
-table {
-    border: 3px solid black;
-    border-collapse: collapse;
-}
 body {
-    background-image: url('https://i.postimg.cc/wMyj1kqp/AGW.webp');
-    background-size: cover;
-}
-header img {
-    width: 9em;
-}
-th, td {
-    border: 2px solid red;
-    text-align: center;
-}
-/* footer */
-footer p {
-    font-weight: bolder;
-}
-main img {
-    width: 9em;
-}
-.ds {
-    width: 15em;
-
-}
-.truly-special {
-    display: inline-flex;
-
-}
-cursor {
-    pointer-events: painted;
-}
-/* Create custom variables. */
-:root {
-    --primaryColor: black;
-    --secondaryColor: white;
-    --alternativeColor: rgba(5, 125, 19, 0.7);
-    --gray: rgba(205, 198, 198, 0.5);
-    --mainBoxShadow: .5vw .5vw .5vw var(--alternativeColor);
-    --landingPage : .5vw 1vw .5vw var(--gray);
-    --activeLink: #00b061;
+    overflow-x: hidden !important;
+    max-height: 100vh;
+    max-width: 100%;
+    background-image: linear-gradient(to right, rgba(238, 119, 82, 0.25) 0%, rgba(231, 60, 126, 0.25) 25%, rgba(35, 166, 213, 0.25) 50%, rgba(35, 213, 171, 0.25) 75%);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
 }
 
-/* header, main, footer */
-header, main, footer {
-    min-width: 100%;
-}
-header, footer {
-    background-color: darkslateblue;
-}
-/* Display: inline-flex */
-header, .menu-list {
-    display: inline-flex;
-}
-/* menu */
-.menu {
-    margin-left: auto;
-    align-self: center;
-}
-/* menu-list */
-.menu-list {
-    list-style: none;
-}
-.menu-list li {
-    padding: 0 5px;
-}
-/* Anchor tags */
-
-li a:link {
-    background-color: slateblue;
-    box-shadow: 0 0 6px 1px black;
-    border-radius: 5px;
-}
-li a:visited {
-    color: var(--alternativeColor);
-    border-radius: 5px;
-}
-li a:hover {
-    font-size: 18px;
-    color: var(--secondaryColor);
-    background-color:slategrey;
-}
-li a:active {
-    color: var(--primaryColor);
-    background-color: var(--activeLink);
-}
-/* Pseudo-class selector */
-h2::first-line {
-    background-color: darkcyan;
-    color: white;
-    padding: 0 5px;
-    font-size: 20px;
-}
-
-/* footer */
-footer{
-    height: 99px;
-    border: 5px solid black;
-    border-radius: 12px;
-}
-footer p {
-    font-weight: bold;
-}
-#box1 {
-    background-color: black;
-    border-radius: 30px;
-    text-align: center;
-    width: 300px;
-    margin-left: 600px;
-}
-#box1p {
-    /* Font-Color =>Text*/
-    color: green;
-    font-weight: bolder;
-}
-.logo {
-    border-radius: 20px;
-    border: 5px solid black;
-    width: 10.5em;
-}
-#contact {
-    text-align: center;
-}
-#subject {
-    text-align: center;
-}
-#button {
-    text-align: center;
-}
-#footarge {
-    min-height: 15vh;
-}
-
-/* adding responsiveness using media queries */
-/*@media screen and (max-width: 600px) {
-    header {
-        width: 100vw;
-        background-color: green;
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
     }
-  }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
